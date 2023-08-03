@@ -1,0 +1,57 @@
+    body {
+      background-color: #f7f7f7;
+      font-family: Arial, sans-serif;
+    }
+
+    .card {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border: 1px solid #ced4da;
+      border-radius: 5px;
+    }
+
+    .card-header {
+      background-color: #011dbd93;
+      color: #180808fe;
+      text-align: center;
+      padding: 10px;
+      border-radius: 5px 5px 0 0;
+      border: 1px solid rgb(165, 162, 162);
+    }
+    .card-body{
+      border: 1px solid rgb(165, 162, 162);
+    }
+    
+
+    .form-label {
+      font-weight: bold;
+    }
+
+    .form-select,
+    .form-control {
+      border: 1px solid #161718;
+      border-radius: 5px;
+      width: 100%; /* Set the width to 100% to match other input fields */
+    }
+
+    .form-select:focus,
+    .form-control:focus {
+      outline: none;
+      
+      box-shadow: 0 0 0 2px #007bff;
+    }
+
+    .btn-primary {
+      background-color: #007bff;
+      border: none;
+      border-radius: 5px;
+      width: 100%;
+    }
+
+    .btn-primary:hover {
+      background-color: #0056b3;
+    }
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none; /* Chrome and Safari */
+    margin: 0; /* Remove the margin to hide the spinners */
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loan Prediction System</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+  <div class="container mt-5">
+    <div class="card">
+      <div class="card-header">
+        <h1 class="card-title">LOAN PREDICTION SYSTEM</h1>
+      </div>
+      <div class="card-body">
+        <form action="/" method="post">
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <label for="Gender" class="form-label">Gender</label>
+              <select class="form-select" id="Gender" name="Gender">
+                <option value="none" selected disabled hidden>Select an Option</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <label for="Martial" class="form-label">Martial Status</label>
+              <select class="form-select" id="Martial" name="Martial">
+                <option value="none" selected disabled hidden>Select an Option</option>
+                <option value="Yes">Married</option>
+                <option value="No">Single</option>
+              </select>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <label for="dependent" class="form-label">Dependents</label>
+              <select class="form-select" id="dependent" name="dependent">
+                <option value="none" selected disabled hidden>Select an Option</option>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3+">3+</option> 
+              </select>
+            </div>
+            <div class="col-md-6">
+              <label for="education" class="form-label">Education</label>
+              <select class="form-select" id="education" name="education">
+                <option value="none" selected disabled hidden>Select an Option</option>
+                <option value="graduate">Graduated</option>
+                <option value="notGraduate">Not Graduated</option>
+              </select>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <label for="selfEmployed" class="form-label">Self Employed</label>
+              <select class="form-select" id="selfEmployed" name="selfEmployed">
+                <option value="none" selected disabled hidden>Select an Option</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <label for="creditHistory" class="form-label">Credit History</label>
+              <select class="form-select" id="creditHistory" name="creditHistory">
+                <option value="none" selected disabled hidden>Select an Option</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+              </select>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <label for="aincome" class="form-label">Applicant Income</label>
+              <input type="number" class="form-control" id="aincome" name="aincome" placeholder="Enter Applicant Income" min="0" max="99999" required>
+            </div>
+            <div class="col-md-6">
+              <label for="coaincome" class="form-label">Co-Applicant Income</label>
+              <input type="number" class="form-control" id="caincome" name="caincome" placeholder="Enter Co-Applicant Income" min="0" step="0.01" max="99999" required>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <label for="loanamount" class="form-label">Loan Amount</label>
+              <input type="number" class="form-control" id="loanamount" name="loanamount" placeholder="Enter Loan Amount" min="0" max="100000" step="0.01" required>
+            </div>
+            <div class="col-md-6">
+              <label for="loanterm" class="form-label">Loan Term</label>
+              <input type="number" class="form-control" id="loanterm" name="loanterm" placeholder="Enter Loan Term" min="0" max="1000" step="0.1" required>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col-md-12">
+              <label for="propertyArea" class="form-label">Property Area</label>
+              <select class="form-select" id="propertyArea" name="propertyArea">
+                <option value="none" selected disabled hidden>Select an Option</option>
+                <option value="urban">Urban</option>
+                <option value="rural">Rural</option>
+                <option value="semiurban">Semi Urban</option>
+              </select>
+            </div>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS (Optional, only needed if you want to add JavaScript functionality) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
